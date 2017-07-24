@@ -1,57 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Contact Chris Hasler</title>
-	<link rel = "stylesheet" type = "text/css" href = "assets/css/reset.css">
-	<link rel = "stylesheet" type = "text/css" href = "assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Document</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel = "stylesheet" href = "assets/css/style.css"> 
+  <link href="https://fonts.googleapis.com/css?family=Artifika" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<h2 class = "name">Chris Hasler </h2>
-		<nav>
-			<a class = "links" href = "index.html">About  |</a>
-			<a class = "links" href = "portfolio.html">Portfolio   |</a>
-			<a class = "links" href = "contact.html">Contact</a>
-		</nav>		
-	</header>
 
-	<container class = "contactBox">
-		<h2 class= "contactHeading">Contact</h2>
-		<form action="/action_page.php">
-    		<label for="name">Name</label>
-    		<input type="text" id="name" name="firstname" placeholder="John Smith" maxlength="40">
+<!--navbar -->
+<nav class="navbar navbar-default top-heading">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <h2 class = "name">Chris Hasler</h2>
+    </div>
 
-    		<label for="email">E-mail</label>
-	    	<input type="text" id="email" name="lastname" placeholder="example@gmail.com" maxlength="40">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+        <ul class="nav navbar-nav navbar-right nav-links">
+          <li><a class = "top-links" href="index.html">About</a></li>
+          <li><a class = "top-links" href="portfolio.html">Portfolio</a></li>
+          <li><a class = "top-links" href="contact.html">Contact</a></li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
-    		<label class = "messageHeading" for="message">Message</label><br><br>
-    		<textarea class="longInput" rows="10"></textarea>
+<div class = "container main contact-main">
+  <div class = "row">
+    <!--Left box-->
+    <div class = "left-box col-sm-7 contact-left-box">
+      <div class = "row">
+        <h2 class = "left-box-title">Contact</h2>
+      </div>
 
-    		<input type="submit" value="Submit">
-  		</form>
-	</container>
+      <div class = "row">
+          <form action="/action_page.php">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="firstname" placeholder="John Smith" maxlength="40">
 
-	<div class = "connect">
-		<h3 class = "headerConnect">Connect with Me </h3>
-		<div class = "connectLinks">
-			<a href="https://github.com/chrissuki" target="_blank">
-            	<img id="git" src="assets\images\github.png" alt="Github">
-            </a>
+        <label for="email">E-mail</label>
+        <input type="text" id="email" name="lastname" placeholder="example@gmail.com" maxlength="40">
 
-         	<a href="https://www.linkedin.com/in/christian-hasler-85b94b139/" target="_blank">
-            	<img id="link" src="assets\images\linked.png" alt="Linkedin">
-            </a>
+        <label class = "messageHeading" for="message">Message</label><br><br>
+        <textarea class="longInput" rows="10"></textarea>
 
-         	<a href="https://stackoverflow.com/users/7710348/chris-hasler?tab=profile" target="_blank">
-            	<img id="stack" src="assets\images\stack.png" target="_blank" alt="Stack Overflow">
-            </a>
+        <input type="submit" value="Submit">
+      </form>
+        
+      </div>
 
+    </div>
+    <!--spacer-->
+    <div class = "col-sm-1 col-sx-0"></div>
+    <!--right box -->
+    <div class = "right-box col-md-4 col-sm-4 col-xs-12">
+      <h3 class = "right-box-title">Connect with me </h3>
+      <div class = "row connect-links"> 
+        <div class = "col-sm-4 col-xs-4">
+          <a href="https://github.com/chrissuki" target="_blank">
+            <img id="git" src="assets\images\github.png" alt="Github">
+          </a>
+        </div>
+
+        <div class = "col-sm-4 col-xs-4">
+          <a href="https://www.linkedin.com/in/christian-hasler-85b94b139/" target="_blank">
+            <img id="link" src="assets\images\linked.png" alt="Linkedin">
+          </a>
+        </div>
+
+        <div class = "col-sm-4 col-xs-4">
+          <a href="https://stackoverflow.com/users/7710348/chris-hasler?tab=profile" target="_blank">
+              <img id="stack" src="assets\images\stack.png" target="_blank" alt="Stack Overflow">
+          </a>
         </div> 
-	</div>
-		
-	<footer>
-		@ Copyright 2017 Chris Hasler
-	</footer>	
+
+      </div> <!-- end link row -->
+      </div> <!-- end right box -->
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!--footer-->
+<div class="navbar navbar-default navbar-fixed-bottom navbarBottom">
+    <div class="container stickyfooter">
+      <div class = "col-xs-4 col-sm-5 col-md-5  col-lg-5">
+      </div>
+      <p class="navbar-text pull-left copyright">© 2017 Copyright Chris Hasler
+      </p>
+    </div>
+</div>
+
 </body>
 </html>

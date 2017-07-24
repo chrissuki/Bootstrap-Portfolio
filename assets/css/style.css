@@ -1,14 +1,4 @@
 /* css for html portfolio, contact, and index */
-.stickyfooter{
-	background-color:#666666;
-	width:100%;
-	border-top:5px solid #4aaaa5;
-	color:white;
-}
-.copyright{
-	color:white;
-}
-
 body {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	background-color: #ffffff;
@@ -19,10 +9,10 @@ body {
 	background-image: url('https://wallpaperscraft.com/image/gray_emboss_circles_decorative_coating_72421_2560x1440.jpg');
 	
 }
+/*navbar */
 .topheading{
 	background-color:#4aaaa5;
 }
-
 .name{
 	background-color:#4aaaa5;
 	margin:0px 0px 0px 80px;
@@ -34,6 +24,7 @@ body {
 	margin: 14px 95px 0px 0px;
 }
 
+/*main context*/
 .main{
 	margin: 31px 0px 100px 93px;
     width: 83%;
@@ -44,12 +35,13 @@ body {
 	margin-right:0px;
 	width:100%;
 }
-
+/*left box*/
 .left-box{
-	height:820px;
+	height:613px;
 	background-color:white;
 	border:1px solid black;
 }
+
 .left-box-title{
 	color:#4aaaa5;
 	padding-top:20px;
@@ -58,6 +50,17 @@ body {
 	margin: 12px 0px 0px 24px;
 	font-family: 'Artifika', serif;
 }
+
+.contact-left-box{
+	height: 811px;
+}
+.index-left-box{
+	height:1000px;
+}
+.portfolio-left-box{
+	height:1500px;
+}
+
 
 .me-pic{
 	width:100%;
@@ -82,6 +85,14 @@ body {
 	padding-bottom:20px;
 	margin: 0px 0px 0px 0px;
 }
+
+.right-box-portfolio{
+	width:25.25%;
+	height:150px;
+}
+
+
+
 #git, #link, #stack {
 	width: 138%;
     height: 68px;
@@ -95,10 +106,117 @@ body {
 	margin-top: 10px;
     margin-right: 82px;
 	}
+
+.contactBox{
+	float:left;
+	width:60%;
+	height:550px;
+	background-color:#ffffff;
+	margin:50px 0px 106px 50px;
+}
+
+.contactHeading{
+	margin: 0px 40px 60px 40px;
+	padding-top:30px;
+	padding-bottom:30px;
+	border-style: solid;
+	border-width:0px;
+    border-bottom-width: 3px;
+    border-color: #cccccc;
+    font-size:175%;
+}
+
+form{
+	margin: 16px 2px 0px 23px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px 8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.messageHeading{
+	padding:1px;
+}
+textarea{
+	width:100%;
+	height:20%;
+	margin: -7px 41px 0px 1px;
+}
+
+input[type=submit] {
+    width: 25%;
+    height: 2%;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 14px 20px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #348E8E;
+}
+/*portfolio*/
+.portfolio-left-box{
+	height: 1757px;
+    margin: 0px 0px 93px 29px;
+}
+.portfolio-main{
+
+margin: 0px 0px 0px 0px;
+
+}
+
+.portfolioPic{
+	padding: 0px;
+    margin: 28px 0px 0px 10px;
+    width: 100%;
+    height: 300px;
+    position:relative;
+}
+.portfolioBoxHeader{
+	position: absolute;
+    bottom: 13px;
+    text-align: center;
+    background-color: #4aaaa5;
+    color: white;
+    width: 93.88%;
+    margin: 0px 4px 0px 10px;
+}
+.right-box-portfolio{
+    margin: 0px 0px 0px 34px;
+    height: 190px;
+}
+.portfolio-right-box-title{
+	font-size:130%;
+}
+
+.stickyfooter{
+	background-color:#666666;
+	width:100%;
+	border-top:5px solid #4aaaa5;
+	color:white;
+}
 .copyright{
 	color:white;
 }
+/* 980 screen */
+@media screen and (max-width:1024px) and (min-width: 769px){
 
+	.portfolioPic{
+    	clear: both;
+    	width: 101%;
+}
+
+}
+
+/* 768 screen */
 @media screen and (max-width:768px){
 	
 	.nav-links{
@@ -108,9 +226,15 @@ body {
 		margin-left:10px;
 	}
 	.left-box{
-		width:105%;
-		height: 478px;
-		margin:0px 0px 0px 0px;
+		width: 105%;
+    	height: 613px;
+    	margin: 0px 0px 0px 0px;
+	}
+	.index-left-box{
+		height:500px;
+	}
+	.contact-left-box{
+		height:475px;
 	}
 	.main{
 		margin: 38px 6px 90px 27px;
@@ -138,16 +262,37 @@ body {
 	.connect-links {
 		width:33%;
 	}
-}
+	.portfolio-left-box{
+		height: 1100px
+	}
+	.portfolioBoxHeader{
+		width: 91.1%;
+	}
+	.portfolioBox{
+		width:50%;
+		height:300px;
+		margin-bottom:28px;
+	}
+	.portfolioPic{
+		width:100%;
+		height:300px;
+	}
 
+
+
+}
+/* 640 screen*/
 @media screen and (max-width:640px){
 	.name{
 		text-align:center;
 		margin-left:0px;	
 	}
 	.left-box{
-		height: 541px;
+		height: 618px;
     	margin: 0px 0px 0px 0px;
+	}
+	.contact-left-box{
+		height: 535px
 	}
 
 	#git, #link, #stack{
@@ -162,5 +307,15 @@ body {
 	.link-row{
 		width: 120%;
     	margin: 0px 0px 0px 52px;
+	}
+	.portfolio-left-box{
+	    height: 1759px;
+    	margin: 0px 0px 0px 0px;
+	}
+	.portfolioBoxHeader {
+    	width: 94.7%;
+	}
+	.portfolioPic{
+		width:75%;
 	}
 }

@@ -1,71 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Chris Hasler</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type = "text/css" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Document</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel = "stylesheet" href = "assets/css/style.css"> 
+  <link href="https://fonts.googleapis.com/css?family=Artifika" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<h2 class = "name">Chris Hasler</h2>
-		<nav>
-			<a href = "index.html">About  |</a>
-			<a href = "portfolio.html">Portfolio   |</a>
-			<a href = "contact.html">Contact   </a>
-		</nav>
-	</header>
 
-	<div class = "portfolio">
-		<h2 class = "aboutMeTitle portfolioHeader"> Portfolio </h2>
-		
-		<div class = "portfolioBox">
-			<a class = "portfolioLink" href = "#"><img class = "portfolioPic" src = "assets/images/hangman2.png"></a>
-			<h3 class = "portfolioBoxHeader">Hangman </h3>		
-		</div>
+<!--navbar -->
+<nav class="navbar navbar-default top-heading">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <h2 class = "name">Chris Hasler</h2>
+    </div>
 
-		<div class = "portfolioBox">
-			<a href = "#"><img class = "portfolioPic" src = "assets/images/rpg.jpg"></a>
-			<h3 class = "portfolioBoxHeader">RPG game</h3>		
-		</div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+        <ul class="nav navbar-nav navbar-right nav-links">
+          <li><a class = "top-links" href="index.html">About</a></li>
+          <li><a class = "top-links" href="portfolio.html">Portfolio</a></li>
+          <li><a class = "top-links" href="contact.html">Contact</a></li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
-		<div class = "portfolioBox">
-			<a href = "#"><img class = "portfolioPic" src = "assets/images/trivia2.jpg"> </a>
-			<h3 class = "portfolioBoxHeader">Trivia Game</h3>
-		</div>
+<!--Left box-->
+<div class = "container main portfolio-main">
 
-		<div class = "portfolioBox">
-			<a href = "#"> <img class = "portfolioPic" src = "assets/images/rutgers.jpg"> </a>
-			<h3 class = "portfolioBoxHeader">Rutgers Indo Widget</h3>		
-		</div>
+  <div class = "row">
+    <div class = "col-sm-1 col-xs-1">
+    </div>
+    <div class = "left-box col-md-7 col-sm-7 col-xs-12 portfolio-left-box">
+      <div class = "row">
+        <h2 class = "left-box-title">Portfolio</h2>
+      </div>
 
-		<div class = "portfolioBox">
-			<img class = "portfolioPic rps" src = "assets/images/rockpaperscissors.jpg">
-			<h3 class = "portfolioBoxHeader">Rock Paper Scissors </h3>		
-		</div>
-	</div>
+      <div class = "row">
+    
+        <div class = "portfolioBox col-md-12 col-sm-12 col-xs-12">
+          <a class = "portfolioLink" href = "#"><img class = "portfolioPic col-sm-12 col-xs-6" src = "assets/images/hangman2.png"></a>
+          <h3 class = "portfolioBoxHeader col-sm-12 col-xs-6">Hangman </h3>    
+        </div>
 
-	<div class = "connect">
-		<h3 class = "headerConnect">Connect with Me </h3>
-		<div class = "connectLinks">
-			<a href="https://github.com/chrissuki" target="_blank">
-            	<img id="git" src="assets\images\github.png" alt="Github">
-            </a>
+        <div class = "portfolioBox col-md-12 col-sm-12 col-xs-12">
+          <a href = "#"><img class = "  portfolioPic" src = "assets/images/rpg.jpg"></a>
+          <h3 class = "portfolioBoxHeader col-sm-12 col-xs-6">RPG game</h3>    
+        </div>
 
-         	<a href="https://www.linkedin.com/in/christian-hasler-85b94b139/" target="_blank">
-            	<img id="link" src="assets\images\linked.png" alt="Linkedin">
-            </a>
+        <div class = "portfolioBox col-md-12 col-sm-12 col-xs-12">
+          <a href = "#"><img class = "portfolioPic" src = "assets/images/trivia2.jpg"> </a>
+          <h3 class = "portfolioBoxHeader col-sm-12 col-xs-6">Trivia Game</h3>
+        </div>
 
-         	<a href="https://stackoverflow.com/users/7710348/chris-hasler?tab=profile" target="_blank">
-            	<img id="stack" src="assets\images\stack.png" target="_blank" alt="Stack Overflow">
-            </a>
+        <div class = "portfolioBox col-md-12 col-sm-12 col-xs-12">
+          <a href = "#"> <img class = "portfolioPic" src = "assets/images/rutgers.jpg"> </a>
+          <h3 class = "portfolioBoxHeader col-sm-12 col-xs-6">Rutgers Indo Widget</h3>   
+        </div>
 
+        <div class = "portfolioBox col-md-12 col-sm-12 col-xs-12">
+          <a href = "#"><img class = "portfolioPic rps" src = "assets/images/rockpaperscissors.jpg"> </a>
+          <h3 class = "portfolioBoxHeader col-sm-12 col-xs-6">Rock Paper Scissors </h3>    
+        </div>
+      </div><!--left box row ends -->
+    </div>  <!-- end leftbox -->
+    
+    <!--right box -->
+        <!--right box -->
+    <div class = "right-box col-md-3 col-sm-3 col-xs-12 right-box-portfolio">
+      <h3 class = "right-box-title portfolio-right-box-title">Connect with me </h3>
+      <div class = "row connect-links"> 
+        <div class = "col-sm-4 col-xs-4">
+          <a href="https://github.com/chrissuki" target="_blank">
+            <img id="git" src="assets\images\github.png" alt="Github">
+          </a>
+        </div>
+
+        <div class = "col-sm-4 col-xs-4">
+          <a href="https://www.linkedin.com/in/christian-hasler-85b94b139/" target="_blank">
+            <img id="link" src="assets\images\linked.png" alt="Linkedin">
+          </a>
+        </div>
+
+        <div class = "col-sm-4 col-xs-4">
+          <a href="https://stackoverflow.com/users/7710348/chris-hasler?tab=profile" target="_blank">
+              <img id="stack" src="assets\images\stack.png" target="_blank" alt="Stack Overflow">
+          </a>
         </div> 
-	</div>
 
-<footer>
-	@ Copyright 2017 Chris Hasler
-</footer>	
+      </div> <!-- end link row -->
+      </div> <!-- end right box -->
+
+    </div> <!-- end primary row -->
+    </div>
+
+  </div>
+</div>
+
+
+<!--footer-->
+<div class="navbar navbar-default navbar-fixed-bottom navbarBottom">
+    <div class="container stickyfooter">
+      <div class = "col-xs-4 col-sm-5 col-md-5  col-lg-5">
+      </div>
+      <p class="navbar-text pull-left copyright">© 2017 Copyright Chris Hasler
+      </p>
+    </div>
+</div>
 
 </body>
 </html>
