@@ -51,8 +51,9 @@ body {
 	font-family: 'Artifika', serif;
 }
 
-.contact-left-box{
-	height: 811px;
+.left-box-index{
+	height: 820px;
+	background-color:white;
 }
 .index-left-box{
 	height:1000px;
@@ -85,7 +86,10 @@ body {
 	padding-bottom:20px;
 	margin: 0px 0px 0px 0px;
 }
-
+.right-box-contact{
+	background-color:white;
+	height:200px;
+}
 .right-box-portfolio{
 	width:25.25%;
 	height:150px;
@@ -94,10 +98,11 @@ body {
 
 
 #git, #link, #stack {
-	width: 138%;
+    width: 88%;
     height: 68px;
     float: left;
-    margin: 29px 3px 2px 7px;
+    margin: 25px 5px 2px 2px;
+
 }
 .top-links{
 	margin: 0px 3px 0px 14px;
@@ -145,7 +150,7 @@ input[type=text], select {
 textarea{
 	width:100%;
 	height:20%;
-	margin: -7px 41px 0px 1px;
+	margin: -7px 41px 0px 3px;
 }
 
 input[type=submit] {
@@ -213,7 +218,22 @@ margin: 0px 0px 0px 0px;
     	clear: both;
     	width: 101%;
 }
+	.contact-left-box{
+		float:left;
+		height:635px;
+	}
+	.main{
+		height:670px;
+	}
 
+	.right-box{
+		float:left;
+		width:100%;
+		height:200px;
+		width: 105%;
+    	height: 200px;
+    	margin: 45px 6px 100px 0px;
+	}
 }
 
 /* 768 screen */
@@ -230,11 +250,17 @@ margin: 0px 0px 0px 0px;
     	height: 613px;
     	margin: 0px 0px 0px 0px;
 	}
+	.left-box-index{
+		width: 105%;
+    	height: 494px;
+    	margin: 0px 0px 0px 0px;
+    	background-color:white;
+	}
 	.index-left-box{
 		height:500px;
 	}
 	.contact-left-box{
-		height:475px;
+		height:615px;
 	}
 	.main{
 		margin: 38px 6px 90px 27px;
@@ -257,7 +283,15 @@ margin: 0px 0px 0px 0px;
 		height:200px;
 		width: 105%;
     	height: 200px;
-    	margin: 40px 0px 100px 0px;
+    	margin: 45px 6px 100px 0px;
+	}
+	.right-box-contact{
+		background-color:white;
+		width:100%;
+		height:200px;
+		width: 105%;
+    	height: 200px;
+    	margin: 42px 0px 100px 0px;
 	}
 	.connect-links {
 		width:33%;
@@ -291,10 +325,13 @@ margin: 0px 0px 0px 0px;
 		height: 618px;
     	margin: 0px 0px 0px 0px;
 	}
-	.contact-left-box{
-		height: 535px
+	.left-box-index{
+		height: 545px;
 	}
-
+	.contact-left-box{
+		height: 615px
+	}
+	
 	#git, #link, #stack{
 		width: 162%;
     	height: 55px;
@@ -309,13 +346,21 @@ margin: 0px 0px 0px 0px;
     	margin: 0px 0px 0px 52px;
 	}
 	.portfolio-left-box{
-		height: 1102px;
+		height: 1755px;
     	margin: 0px 0px 0px 0px;
 	}
+	.right-box{
+		margin: 45px 0px 100px 1px;
+	}
 	.portfolioBoxHeader {
-    	width: 94.7%;
+    	width: 100.7%;
 	}
 	.portfolioPic{
 		width:107%;
+	}
+	.portfolioBox{
+		width: 95%;
+    	height: 300px;
+    	margin-bottom: 28px;
 	}
 }
